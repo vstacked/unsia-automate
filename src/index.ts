@@ -27,7 +27,7 @@ async function main() {
     if (recentPosts.length === 0) {
       console.log("[INFO] ✅ Tidak ada materi baru. Selesai.");
       await context.close();
-      return;
+      process.exit(0);
     }
 
     // MAX_POSTS: batasi jumlah postingan yang diproses (untuk testing)
@@ -200,6 +200,8 @@ async function main() {
     );
 
     await context.close();
+    console.log("[INFO] Bot dihentikan.");
+    process.exit(0);
   } catch (error) {
     console.error("\n[FATAL ERROR] Pipeline terhenti:", error);
     process.exit(1);
