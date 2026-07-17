@@ -368,7 +368,7 @@ edlink-pipeline/
 # Edlink
 EDLINK_EMAIL=
 EDLINK_PASSWORD=
-EDLINK_BASE_URL=https://kuliah.unsia.ac.id
+EDLINK_BASE_URL=https://kuliah.edlink.ac.id
 
 # Groq
 GROQ_API_KEY=
